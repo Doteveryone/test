@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Summary — Patient lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div data-screen="home" class="fullscreen no-pad">
+      <img src="assets/img/notification_screen.png" data-open-screen="today" class="fullscreen-image">
+    </div>
+    <header>
+      <h1>Hello Lou</h1>
+    </header>
+    <div data-screen="today">
+      <h2 class="fullscreen-subtitle">Today<br>Monday 13th June 2016</h2>
+      <div class="day-summary">
+        <h3 class="time">13:00pm</h3>
+        <p class="summary-item">Take the blood-thinning <strong>medication</strong> (warfarin).</p>
+        <h3 class="time">13:30pm</h3>
+        <p class="summary-item">You have a physio <strong>appointment</strong> at Green’s Physiotherapists. Remember to wear loose clothing.</p>
+        <div data-more="today">
+          <h3 class="time">14:30pm</h3>
+          <p class="summary-item">You have an <strong>appointment</strong> with your GP, Dr Ruth Wallis.</p>
+          <h3 class="time">18:00pm</h3>
+          <p class="summary-item">Take the blood-thinning <strong>medication</strong> (warfarin).</p>
+        </div>
+      </div>
+      <section class="button">
+        <h2 data-more-button="today">See <span class="label-more">more</span><span class="label-less">less</span> for today<i class="fa fa-plus"></i></h2>
+
+        <div data-accordion="read-more">
+        </div>
+      </section>
+      <section class="button alt">
+        <h2>Medication</h2>
+      </section>
+      <section class="button alt">
+        <h2>Record</h2>
+      </section>
+      <section class="button alt">
+        <a href="who-i-am-patient.html#screen/home"><h2>Who I am</h2></a>
+      </section>
+      <div class="bottom-button alt">
+        <p>I need help<i class="fa fa-question"></i></p>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

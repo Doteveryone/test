@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Contacts — carer lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Lucy’s care team</h1>
+    </header>
+    <div data-screen="home">
+      <div data-tab-set>
+        <a href="#" data-tab="all">All</a>
+        <a href="#" data-tab="search">Search</a>
+      </div>
+      <div data-tab-content="all">
+        <ul class="faces">
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">Helen Mundey</span>
+              <span class="job">Next of kin</span>
+            </div>
+          </li>
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">Dr Harriet Gregory</span>
+              <span class="job">GP</span>
+            </div>
+          </li>
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">Karen Staszewski</span>
+              <span class="job">Palliative care nurse specialist</span>
+            </div>
+          </li>
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">Neil Patel</span>
+              <span class="job">Dietician</span>
+            </div>
+          </li>
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">James Crawford</span>
+              <span class="job">Physiotherapist</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div data-tab-content="search" class="dark-bg question-screen">
+        <p class="question">What’s happened?</p>
+        <div class="stacked-buttons">
+          <div class="stacked-button" data-open-screen="contact">
+            <p>Say it</p>
+          </div>
+          <div class="stacked-button" data-close-screen="contact">
+            <p>Type it</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-screen="contact">
+      <div data-tab-set>
+        <a href="#" data-tab="all2" data-open-screen="home">All</a>
+        <a href="#" data-tab="search2" data-tab-open>Search</a>
+      </div>
+      <div data-tab-content="search" class="dark-bg question-screen">
+        <p class="question">You should speak to Julie, she has a call in session at 2pm tomorrow.</p>
+        <ul class="faces top-border bottom">
+          <li>
+            <img src="assets/img/avatar.svg">
+            <div class="meta">
+              <span class="name">Dr Julie Powells</span>
+              <span class="job">Neurologist</span>
+              <span class="tel"><a href="tel:07321393124">07321393124</a></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div data-popup="new-contact">
+      <img src="assets/img/avatar.svg">
+      <p>Julie King, your physiotherapist, would like to be added</p>
+      <div class="button-bar">
+        <a href="#" data-open-bar="new-contact">Okay, that’s fine</a>
+        <a href="#" data-close-popup>Not now</a>
+      </div>
+    </div>
+
+    <div data-bar="new-contact">
+      <i class="fa fa-2x fa-check right"></i>
+      <p>Julie King, your physiotherapist, is now one of your contacts.</p>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Medication — Clinician lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/ptr.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="ptr">
+      <p>Loaded the latest message</p>
+    </div>
+
+    <div data-screen="home">
+      <header><h1>Medication</h1></header>
+      <section class="callme">
+        <h3>Lucy Mundey</h3>
+        <dl class="metadata">
+          <dt>NHS# 123 456 789</dt>
+          <dl>18th July 1934, 82 years old</dl>
+        </dl>
+      </section>
+      <section class="button notification" data-open-screen="active">
+        <h2>Active<i class="fa fa-exclamation-circle"></i></h2>
+      </section>
+      <section class="button">
+        <h2>Repeat</h2>
+      </section>
+      <section class="button">
+        <h2>Acute</h2>
+      </section>
+      <section class="button">
+        <h2>As required</h2>
+      </section>
+      <section class="button">
+        <h2>Historical</h2>
+      </section>
+    </div>
+
+    <div data-screen="active" class="fullscreen no-pad overflow" id="content">
+      <header>
+        <span data-open-screen="home" class="left pad-top larger"><i class="fa fa-chevron-left"></i></span>
+        <h1>Active medication</h1>
+      </header>
+
+      <span class="genericon genericon-next"></span>
+      <div class="loading">
+        <span id="l1"></span>
+        <span id="l2"></span>
+        <span id="l3"></span>
+      </div>
+
+      <div class="medication-title">
+        <h2>Ace inhibitor</h2>
+        <h2>Ramipril</h2>
+      </div>
+      <ul class="messages">
+        <span class="new-messages"><i class="fa fa-arrow-up"></i>New messages</span>
+        <li class="message cf" style="display: none">
+          <img src="assets/img/avatar.svg">
+          <div>
+            <p>I’ve noticed that I’m feeling very drowsy after taking these. It makes me unhappy because I feel too tired to do the things I want to do.</p>
+            <p class="author">Noted for consultation with Dr Ghosh on 18.03.16</p>
+          </div>
+        </li>
+        <li class="message cf">
+          <img src="assets/img/avatar.svg">
+          <div>
+            <p>Quinapril not available. Substituted with Ramipril.</p>
+            <p class="author">Shepherds Bush Pharmacy 17.03.16</p>
+          </div>
+        </li>
+        <li class="message cf">
+          <img src="assets/img/avatar.svg">
+          <div>
+            <p>Prescription ready to collect</p>
+            <p class="author">Shepherds Bush Pharmacy 16.03.16</p>
+          </div>
+        </li>
+        <li class="message cf">
+          <img src="assets/img/avatar.svg">
+          <div>
+            <p>Consultation notes</p>
+            <p class="author">Dr Ghosh 14.03.16</p>
+          </div>
+        </li>
+        <li class="message cf">
+          <img src="assets/img/avatar.svg">
+          <div>
+            <p>Prescribed</p>
+            <p class="author">Dr Ghosh 14.03.16</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+  <script src="assets/js/hammer.2.0.4.js"></script>
+  <script src="assets/js/wptr.1.1.js"></script>
+
+  <script>
+    window.onload = function() {
+      WebPullToRefresh.init( {
+        loadingFunction: exampleLoadingFunction
+      } );
+    };
+
+    var exampleLoadingFunction = function() {
+      return new Promise( function( resolve, reject ) {
+
+        $('.new-messages').fadeOut();
+        $('.message').fadeIn();
+
+        if ( true/* if the loading worked */ ) {
+          resolve();
+        } else {
+          reject();
+        }
+      } );
+    };
+  </script>
+</html>
+

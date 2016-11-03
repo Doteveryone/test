@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Consultation — Patient lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div data-screen="home" class="fullscreen alt question-screen">
+      <p class="metadata">Consultation</p>
+      <p class="metadata">Dr Robinson</p>
+      <p class="metadata">Wednesday 15th June 2016</p>
+      <div class="speak-wrapper">
+        <div class="speak">
+          <span class="record-button-label"><span class="waiting">Record</span><span class="speaking">Recording</span></span>
+          <div class="record-button"></div>
+        </div>
+      </div>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-open-screen="consultation">
+          <p>Finish</p>
+        </div>
+      </div>
+    </div>
+
+    <div data-screen="consultation" class="fullscreen">
+      <h2 class="consultation-meta">Your consultation with Dr Robinson</h2>
+      <h2 class="consultation-meta">Wednesday 15th June 2016, 2pm</h2>
+      <a class="large-button" href="#">Listen again</a>
+      <h3>Important notes</h3>
+      <ul class="notes">
+        <li><p>I’ve prescribed cough medicine called Tessalon Perles. You should take one tablet in the morning and one before you go to bed. I’ll ask you how you’re getting on with it in a few weeks.</p></li>
+        <li><p>I’ve ordered your new crutches and they should be ready to pick up on Thursday.</p></li>
+      </ul>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>
+

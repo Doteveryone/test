@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Summary — transport lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div data-screen="home" class="fullscreen no-pad">
+      <header>
+        <h1>Today's Pickups</h1>
+      </header>
+      <section class="pickups-summary">
+        <h2>Hi John</h2>
+        <p>You should leave the hospice by 09.15</p>
+      </section>
+      <section data-open-screen="pickup-lucy" class="button">
+        <div class="button-inner">
+          <div class="inner-left">
+            <h3>Lou Mundey</h3>
+            <span>At home</span>
+          </div>
+          <div class="inner-right">
+            <time>10:00</time>
+          </div>
+        </div>
+      </section>
+      <section class="button button-disabed">
+        <div class="button-inner">
+          <div class="inner-left">
+            <h3>John Reeves</h3>
+            <span>In hospital</span>
+          </div>
+          <div class="inner-right">
+            <time><i class="fa fa-close"></i></time>
+          </div>
+        </div>
+      </section>
+      <section class="button">
+        <div class="button-inner">
+          <div class="inner-left">
+            <h3>Fatima Hussain</h3>
+            <span>At home</span>
+          </div>
+          <div class="inner-right">
+            <time>10:22</time>
+          </div>
+        </div>
+      </section>
+      <section class="button">
+        <div class="button-inner">
+          <div class="inner-left">
+            <h3>Justin Niamh</h3>
+            <span>At his daughter's house</span>
+          </div>
+          <div class="inner-right">
+            <time>10:47</time>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottom-button alt">
+        <p>View map<i class="fa fa-map"></i></p>
+      </div>
+    </div>
+
+
+    <div data-screen="pickup-lucy" class="fullscreen no-pad">
+      <header>
+        <h1>Mrs Lou Mundey lives here</h1>
+      </header>
+      <section class="lives-here">
+        <img src="assets/img/house.png" class="fullscreen-image">
+        <h2 class="fullscreen-subtitle">12 Dawson Road, Shepherds Bush, London W14 7GY</h2>
+        <p class="summary-item">
+          <a href="https://www.google.co.uk/maps/place/12+Dawson+Pl,+London+W2/">Open in maps</a>
+        </p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="access">How to gain access<i class="fa fa-plus"></i></h2>
+        <p data-accordion="access">Hold the bell for three seconds so Lucy knows you've arrived. She doesn't always hear the bell. There's a key box safe to the right of the front door. The code is 23df6. The front foor key has a red keyring.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="parking">Parking<i class="fa fa-plus"></i></h2>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="phone">Who to phone<i class="fa fa-plus"></i></h2>
+      </section>
+      <section class="language">
+        <select>
+          <option>English</option>
+          <option>Français</option>
+          <option>Español</option>
+          <option>Deutsch</option>
+          <option>Polski</option>
+          <option>Lietuvių kalba</option>
+        </select>
+      </section>
+    </div>
+
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

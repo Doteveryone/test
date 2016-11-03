@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Summary — Family member – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div data-screen="home" class="fullscreen no-pad">
+      <img src="assets/img/notification_screen.png" data-open-screen="tomorrow" class="fullscreen-image">
+    </div>
+    <div data-screen="tomorrow" class="fullscreen no-pad">
+      <h2 class="fullscreen-subtitle">Tomorrow<br>Tuesday 6th June 2016</h2>
+      <div class="day-summary">
+        <p class="summary-item">Your mum’s consultation is scheduled for <strong>12:15am at Charing Cross hospital</strong> with Dr Ghosh.</p>
+        <p class="summary-item">Leave your mum’s house at 11:00am to arrive on time. <a href="#" data-open-screen="map">See your route here</a>.</p>
+        <p class="summary-item">Parking at the hospital costs £3.50 per hour. The parking machines only take cash.</p>
+      </div>
+      <div class="stacked-buttons">
+        <div class="stacked-button">
+          <p>Ok, thanks</p>
+        </div>
+        <div class="stacked-button">
+          <p>Remind me tomorrow morning</p>
+        </div>
+      </div>
+    </div>
+    <div data-screen="map" class="fullscreen no-pad">
+      <img src="assets/img/map.png" data-open-screen="tomorrow" class="fullscreen-image">
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

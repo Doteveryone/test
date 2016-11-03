@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Collaborative Record</h1>
+    </header>
+    <div data-screen="home">
+      <section class="button">
+        <h2><a href="who-i-am-patient.html">Who I Am — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="who-i-am-nurse.html">Who I Am — palliative care nurse lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="summary-patient.html">Summary — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="summary-family-member.html">Summary — family member lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="summary-transport.html">Summary — transport lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="permissions-clinician.html">Permissions — clinician lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="visual-symptom-locator-patient.html">Visual symptom locator — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="contacts-patient.html">Contacts — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="consultation-patient.html">Consultation  — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="consultations-clinician.html">Consultation  — clinician lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="medicines-patient.html">Medicines — patient lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="medication-clinician.html">Medication — clinician lens</a></h2>
+      </section>
+      <section class="button">
+        <h2><a href="security-token.html">Security token screen  — phone authentication</a></h2>
+      </section>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+  <script>
+    // register a service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }).catch(function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+      });
+    }
+  </script>
+</html>

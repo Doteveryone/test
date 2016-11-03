@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Who I Am – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Who I Am</h1>
+    </header>
+    <div data-screen="home">
+      <section class="callme">
+        <img src="assets/img/photograph.jpg" class="photo">
+        <h1>Call me Lou</h1>
+        <dl class="metadata">
+          <dt>My name is:</dt>
+          <dd>Mrs Lucy Mundey</dd>
+
+          <dt>Date of Birth:</dt>
+          <dd>18th July 1934, I’m 82 years old</dd>
+
+          <dt>My first language is:</dt>
+          <dd>English</dd>
+
+          <dt>Allergies:</dt>
+          <dd>Penicillin</dd>
+        </dl>
+
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="my-health">My health<i class="fa fa-plus"></i></h2>
+        <p data-accordion="my-health">I suffer from COPD. I struggle to breathe and move around slowly. I also have a bad hip so sometimes need help walking.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="who-i-live-with">Who I live with<i class="fa fa-plus"></i></h2>
+        <p data-accordion="who-i-live-with">I live with my daughter, Helen.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="beliefs">My spiritual beliefs<i class="fa fa-plus"></i></h2>
+        <p data-accordion="beliefs">I was baptised CofE and attend church regularly.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="people-appreciate">People appreciate about me<i class="fa fa-plus"></i></h2>
+        <p data-accordion="people-appreciate">My keen sense of humor and the ability to make the best of every situation.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="important">Important to me<i class="fa fa-plus"></i></h2>
+        <p data-accordion="important">I have a pet cat, Dolly.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="support-me">How to support me<i class="fa fa-plus"></i></h2>
+        <p data-accordion="support-me">I like spending time outdoors, and having a cuppa with friends.</p>
+      </section>
+      <div class="bottom-button edit">
+        <p data-mode-toggle="edit">Change something<i class="fa fa-pencil"></i></p>
+      </div>
+    </div>
+
+    <div data-screen="my-health" class="fullscreen question-screen">
+      <p class="intro">Editing information about you</p>
+      <p class="steps">Step 1 / 1</p>
+      <p class="question">What would you like others to know about your health?</p>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-close-screen>
+          <p>Say it</p>
+        </div>
+        <div class="stacked-button" data-close-screen>
+          <p>Type it</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

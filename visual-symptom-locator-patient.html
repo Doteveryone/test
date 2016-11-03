@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Visual symptom locator — Patient lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Help</h1>
+    </header>
+    <div data-screen="home" class="help">
+      <h1 class="help-intro">What do you need help with?</h1>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-open-screen="step1">
+          <p>Say it</p>
+        </div>
+        <div class="stacked-button" data-open-screen="step1">
+          <p>Type it</p>
+        </div>
+      </div>
+    </div>
+    <div data-screen="step1">
+      <div class="info-overlay">
+        <img src="assets/img/target_white.png">
+        <p>Tap on the part where it hurts.</p>
+        <p>Tap again to indicate more pain.</p>
+      </div>
+      <div class="symptom-locator">
+        <img src="assets/img/person.svg" class="person">
+      </div>
+      <div class="bottom-button alt">
+        <p>Front view<i class="fa fa-reply"></i></p>
+      </div>
+      <div class="stacked-buttons hidden">
+        <div class="stacked-button" data-open-screen="step2">
+          <p>This is where it hurts</p>
+        </div>
+        <div class="stacked-button">
+          <p>Select again</p>
+        </div>
+      </div>
+    </div>
+    <div data-screen="step2">
+      <h2 class="large-question">What kind of pain is it?</h2>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-open-screen="step3">
+          <p>Say it</p>
+        </div>
+        <div class="stacked-button" data-open-screen="step3">
+          <p>Type it</p>
+        </div>
+      </div>
+    </div>
+    <div data-screen="step3">
+      <h2 class="large-question">How long have you had the pain for?</h2>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-open-screen="step4">
+          <p>Say it</p>
+        </div>
+        <div class="stacked-button" data-open-screen="step4">
+          <p>Type it</p>
+        </div>
+      </div>
+    </div>
+    <div data-screen="step4">
+      <h2 class="large-question">Your symptoms aren’t serious, but have been noted for your consultation with <span class="highlight">doctor Roy Robinson</span> tomorrow.</h2>
+      <div class="stacked-buttons">
+        <div class="stacked-button">
+          <p>Ok</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>

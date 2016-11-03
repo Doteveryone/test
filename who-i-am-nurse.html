@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Who I Am — palliative care nurse lens – Collaborative Record</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+    <link href="assets/css/prototyping-kit.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Mrs Lucy Mundey</h1>
+    </header>
+    <div data-screen="home">
+      <section class="callme">
+        <img src="assets/img/photograph.jpg" class="photo">
+        <h1>Call me Lou</h1>
+        <dl class="metadata">
+          <dt>Date of Birth:</dt>
+          <dd>18th July 1934, 82 years old</dd>
+
+          <dt>First language:</dt>
+          <dd>English</dd>
+
+          <dt>Main conditions:</dt>
+          <dd>COPD</dd>
+        </dl>
+
+      </section>
+      <section class="search">
+        <input type="text" placeholder="Search">
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="allergies">Allergies<i class="fa fa-plus"></i></h2>
+        <p data-accordion="allergies">Penicillin</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="sight-hearing-movement">Sight, hearing and movement<i class="fa fa-plus"></i></h2>
+        <p data-accordion="sight-hearing-movement">Lou wears glasses and uses a frame to move around. Some hearing loss.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="discussing">Discussing medical information<i class="fa fa-plus"></i></h2>
+        <p data-accordion="discussing">Talk to Lou’s daughter, Helen, but don’t share medical information with Lou’s son Richard.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="spiritual">Spiritual beliefs<i class="fa fa-plus"></i></h2>
+        <p data-accordion="spiritual">Talk to Lou’s daughter, Hannah, but don’t share medical information with Lou’s son Richard.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="important">Important to Lou<i class="fa fa-plus"></i></h2>
+        <p data-accordion="important">Lou has a pet cat, Dolly. She likes being appreciated for her sense of humour and the ability to make the best of every situation.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="living">Living situation<i class="fa fa-plus"></i></h2>
+        <p data-accordion="living">Lou lives with her daughter, Helen.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="home-access">Home access<i class="fa fa-plus"></i></h2>
+        <p data-accordion="home-access">If Lou doesn’t answer, you are permitted to enter the property. The keybox is next to the front shed (code 4567x).</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="carers">Carers<i class="fa fa-plus"></i></h2>
+        <p data-accordion="carers">Physiotherapist visits on Mondays and Thursdays at 2pm. A carer comes in daily at 9am.</p>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="medication">Medication<i class="fa fa-plus"></i></h2>
+        <div data-accordion="medication">
+          <ul>
+            <li>Formoterol, 5mg</li>
+            <li>Ipratropium, 5mg</li>
+            <li>Prednisone, 10mg</li>
+          </ul>
+          <p><a href="#" class="more-button">See the full record</a></p>
+        </div>
+      </section>
+      <section class="button">
+        <h2 data-accordion-button="other">Other important info<i class="fa fa-plus"></i></h2>
+        <div data-accordion="other">
+          <ul>
+            <li>NHS number: 382 758 4925</li>
+            <li>Do not resuscitate</li>
+            <li>Organ donor</li>
+          </ul>
+        </div>
+      </section>
+      <section class="language">
+        <select>
+          <option>English</option>
+          <option>Français</option>
+          <option>Español</option>
+          <option>Deutsch</option>
+          <option>Polski</option>
+          <option>Lietuvių kalba</option>
+        </select>
+      </section>
+    </div>
+
+    <div data-screen="my-health" class="fullscreen question-screen">
+      <p class="intro">Editing information about you</p>
+      <p class="steps">Step 1 / 1</p>
+      <p class="question">What would you like others to know about your health?</p>
+      <div class="stacked-buttons">
+        <div class="stacked-button" data-close-screen>
+          <p>Say it</p>
+        </div>
+        <div class="stacked-button" data-close-screen>
+          <p>Type it</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="assets/js/prototyping-kit.js"></script>
+  <script src="assets/js/collaborative-record.js"></script>
+</html>
